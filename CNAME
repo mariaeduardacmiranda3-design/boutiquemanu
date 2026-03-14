@@ -1,1 +1,11 @@
-boutique.manu.com
+
+git clone https://github.com/mariaeduardacmiranda3-design/boutiquemanu.git
+cd boutiquemanu
+
+# Crie o arquivo CNAME
+echo "boutiquemanu.com" > CNAME
+
+# Commit e push
+git add CNAME
+git commit -m "Add CNAME for custom domain"
+git push origin main
