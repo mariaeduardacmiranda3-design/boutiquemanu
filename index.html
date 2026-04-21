@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <link rel="icon" type="image/png" href="5dccf4ba-2542-4b96-81d4-2b02e58b5f3d.png">
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins..." rel="stylesheet">
-    
+
     <style>
         /* =========================
            RESET & VARIÁVEIS
         ========================= */
-      
+
         * {
             margin: 0;
             padding: 0;
@@ -173,8 +174,17 @@
         }
 
         @keyframes pulse {
-            0%, 100% { transform: scale(1); opacity: 0.5; }
-            50% { transform: scale(1.1); opacity: 0.8; }
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 0.8;
+            }
         }
 
         .banner h1 {
@@ -411,9 +421,17 @@
         }
 
         @keyframes heartBeat {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.3); }
-            100% { transform: scale(1); }
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.3);
+            }
+
+            100% {
+                transform: scale(1);
+            }
         }
 
         .card-info {
@@ -484,7 +502,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
             transition: 0.5s;
         }
 
@@ -559,9 +577,16 @@
             animation: float 3s ease-in-out infinite;
         }
 
-         @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
         }
 
         .cart-btn:hover {
@@ -587,9 +612,17 @@
         }
 
         @keyframes popIn {
-            0% { transform: scale(0); }
-            80% { transform: scale(1.2); }
-            100% { transform: scale(1); }
+            0% {
+                transform: scale(0);
+            }
+
+            80% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
         }
 
         /* =========================
@@ -806,11 +839,12 @@
             transition: var(--transicao);
         }
 
-         .btn-limpar:hover {
+        .btn-limpar:hover {
             border-color: #ff4444;
             color: #ff4444;
             background: rgba(255, 68, 68, 0.05);
         }
+
         /* =========================
            QUANTIDADE NO CARRINHO
         ========================= */
@@ -879,8 +913,13 @@
         }
 
         @keyframes shimmer {
-            0% { background-position: 200% 0; }
-            100% { background-position: -200% 0; }
+            0% {
+                background-position: 200% 0;
+            }
+
+            100% {
+                background-position: -200% 0;
+            }
         }
 
         /* =========================
@@ -961,7 +1000,7 @@
         /* =========================
            RESPONSIVO
          ========================= */
-         @media (max-width: 768px) {
+        @media (max-width: 768px) {
             .menu {
                 display: none;
             }
@@ -1025,14 +1064,32 @@
             }
         }
 
-        .card:nth-child(1) { animation-delay: 0.1s; }
-        .card:nth-child(2) { animation-delay: 0.2s; }
-        .card:nth-child(3) { animation-delay: 0.3s; }
-        .card:nth-child(4) { animation-delay: 0.4s; }
-        .card:nth-child(5) { animation-delay: 0.5s; }
-        .card:nth-child(6) { animation-delay: 0.6s; }
+        .card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .card:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        .card:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+
+        .card:nth-child(6) {
+            animation-delay: 0.6s;
+        }
     </style>
 </head>
+
 <body>
 
     <!-- HEADER -->
@@ -1145,29 +1202,36 @@
             <div class="footer-col">
                 <h3>Boutique Manu</h3>
                 <p>Moda íntima e pijamas com conforto e estilo para o seu dia a dia.</p>
-                <div class="footer-social">
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+               <div class="footer-social">
+    <!-- INSTAGRAM - Substitua SEU_USUARIO pelo seu @ -->
+    <a href="https://www.instagram.com/boutique._manu?igsh=dzlqeGkxb2Znd3My" target="_blank" rel="noopener" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+    
+    <!-- WHATSAPP - Substitua 55 + DDD + NÚMERO (sem espaços ou traços) -->
+    <a href="https://wa.me/5515996924516?text=Oi!%20Vi%20o%20site%20da%20Boutique%20Manu%20e%20quero%20saber%20mais!" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
+                <div class="footer-col">
+                    <h3>Categorias</h3>
+                    <a href="#" onclick="filtrar('pijama'); return false;">Pijamas</a>
+                    <a href="#" onclick="filtrar('lingerie'); return false;">Lingerie</a>
+                    <a href="#" onclick="filtrar('promocao'); return false;">Promoções</a>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento</h3>
+                    <a href="#">Cesário Lange - SP</a>
+                    <a href="#">Entrega rápida</a>
+                    <a href="#">Pagamento na entrega</a>
                 </div>
             </div>
-            <div class="footer-col">
-                <h3>Categorias</h3>
-                <a href="#" onclick="filtrar('pijama'); return false;">Pijamas</a>
-                <a href="#" onclick="filtrar('lingerie'); return false;">Lingerie</a>
-                <a href="#" onclick="filtrar('promocao'); return false;">Promoções</a>
+            <div class="footer-bottom">
+                <p> Boutique Manu - Todos os direitos reservados</p>
+                <p style="margin-top:5px; font-size:11px;">Feito com <i class="fas fa-heart"
+                        style="color:var(--rosa)"></i>
+                    para você</p>
             </div>
-            <div class="footer-col">
-                <h3>Atendimento</h3>
-                <a href="#">Cesário Lange - SP</a>
-                <a href="#">Entrega rápida</a>
-                <a href="#">Pagamento na entrega</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p> Boutique Manu - Todos os direitos reservados</p>
-            <p style="margin-top:5px; font-size:11px;">Feito com <i class="fas fa-heart" style="color:var(--rosa)"></i> para você</p>
-        </div>
     </footer>
 
     <script>
@@ -1215,9 +1279,9 @@
                 categoria: "lingerie",
                 img: "https://res.cloudinary.com/dduyryufv/image/upload/v1776744012/36686057-a6e0-4d7a-8564-38c294d8f8d4_jpxwou.jpg",
                 badge: "Promoção"
-           
+
             },
-            { 
+            {
                 id: 5,
                 nome: "Conjunto Sensual",
                 preco: 79.90,
@@ -1225,8 +1289,8 @@
                 categoria: "lingerie",
                 img: "https://res.cloudinary.com/dduyryufv/image/upload/v1776744135/05023602-c10f-41db-bc1c-f09f3e2e7276_jbuabe.jpg",
                 badge: "Promoção"
-           },
-           { 
+            },
+            {
                 id: 6,
                 nome: "Conjunto Sensual",
                 preco: 79.90,
@@ -1234,8 +1298,8 @@
                 categoria: "lingerie",
                 img: "https://res.cloudinary.com/dduyryufv/image/upload/v1776744208/e8c66360-06bb-4710-b5b2-471fa8a210f0_ivbgcq.jpg",
                 badge: "Promoção"
-           },
-         ];
+            },
+        ];
 
         /* =========================
            ESTADO DA APLICAÇÃO
@@ -1251,7 +1315,7 @@
             try {
                 const carrinhoSalvo = localStorage.getItem('boutiqueManu_carrinho');
                 const favoritosSalvos = localStorage.getItem('boutiqueManu_favoritos');
-                
+
                 if (carrinhoSalvo) {
                     carrinho = JSON.parse(carrinhoSalvo);
                 }
@@ -1279,7 +1343,7 @@
         ========================= */
         function render(lista) {
             const area = document.getElementById("produtos");
-            
+
             if (lista.length === 0) {
                 area.innerHTML = `
                     <div style="grid-column: 1/-1; text-align: center; padding: 60px 20px; color: #666;">
@@ -1324,13 +1388,13 @@
         const searchInput = document.getElementById("search");
         searchInput.addEventListener('input', (e) => {
             const texto = e.target.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-            
+
             const lista = CATALOGO.filter(p => {
                 const nome = p.nome.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
                 const cat = p.categoria.toLowerCase();
                 return nome.includes(texto) || cat.includes(texto);
             });
-            
+
             render(lista);
         });
 
@@ -1339,7 +1403,7 @@
         ========================= */
         function filtrar(cat) {
             categoriaAtiva = cat;
-            
+
             // Atualiza botões
             document.querySelectorAll('.categorias button').forEach(btn => {
                 btn.classList.toggle('ativo', btn.dataset.cat === cat);
@@ -1355,8 +1419,8 @@
         }
 
         /* =========================
-           CARRINHO
-        ========================= */
+             CARRINHO
+          ========================= */
         function add(id) {
             const produto = CATALOGO.find(p => p.id === id);
             if (!produto) return;
@@ -1371,7 +1435,7 @@
             salvarDados();
             atualizarContador();
             showToast(`${produto.nome} adicionado!`);
-            
+
             // Animação no botão do carrinho
             const cartBtn = document.querySelector('.cart-btn');
             cartBtn.style.transform = 'scale(1.2)';
@@ -1388,13 +1452,13 @@
         function alterarQuantidade(id, delta) {
             const item = carrinho.find(i => i.id === id);
             if (!item) return;
-            
+
             item.quantidade += delta;
             if (item.quantidade <= 0) {
                 removerDoCarrinho(id);
                 return;
             }
-            
+
             salvarDados();
             atualizarContador();
             abrirCarrinho();
@@ -1403,7 +1467,7 @@
         function limparCarrinho() {
             if (carrinho.length === 0) return;
             if (!confirm('Deseja remover todos os itens do carrinho?')) return;
-            
+
             carrinho = [];
             salvarDados();
             atualizarContador();
@@ -1425,7 +1489,7 @@
             const modal = document.getElementById("modalOverlay");
             const itens = document.getElementById("itens");
             const footer = document.getElementById("modalFooter");
-            
+
             modal.classList.add('show');
             document.body.style.overflow = 'hidden';
 
@@ -1463,7 +1527,7 @@
                 `;
             }).join('');
 
-            document.getElementById("totalCarrinho").textContent = 
+            document.getElementById("totalCarrinho").textContent =
                 `R$ ${total.toFixed(2).replace('.', ',')}`;
             footer.style.display = 'block';
         }
@@ -1488,7 +1552,7 @@
         function toggleFav(id) {
             const index = favoritos.indexOf(id);
             const produto = CATALOGO.find(p => p.id === id);
-            
+
             if (index === -1) {
                 favoritos.push(id);
                 showToast(`${produto.nome} favoritado!`);
@@ -1496,13 +1560,13 @@
                 favoritos.splice(index, 1);
                 showToast('Removido dos favoritos');
             }
-            
+
             salvarDados();
-            
+
             // Re-renderiza mantendo o filtro atual
             const texto = searchInput.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
             let lista = CATALOGO;
-            
+
             if (categoriaAtiva !== 'todos') {
                 if (categoriaAtiva === 'promocao') {
                     lista = lista.filter(p => p.precoAntigo !== null);
@@ -1510,14 +1574,14 @@
                     lista = lista.filter(p => p.categoria === categoriaAtiva);
                 }
             }
-            
+
             if (texto) {
                 lista = lista.filter(p => {
                     const nome = p.nome.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
                     return nome.includes(texto);
                 });
             }
-            
+
             render(lista);
         }
 
@@ -1546,7 +1610,7 @@
             // Substitua pelo seu número real com DDD
             const telefone = "5515996924516";
             window.open(`https://wa.me/${telefone}?text=${msg}`, '_blank');
-            
+
             showToast('Redirecionando para WhatsApp...');
         }
 
@@ -1556,10 +1620,10 @@
         function showToast(mensagem) {
             const toast = document.getElementById("toast");
             const msg = document.getElementById("toastMsg");
-            
+
             msg.textContent = mensagem;
             toast.classList.add("show");
-            
+
             setTimeout(() => {
                 toast.classList.remove("show");
             }, 3000);
@@ -1607,4 +1671,5 @@
         });
     </script>
 </body>
+
 </html>
